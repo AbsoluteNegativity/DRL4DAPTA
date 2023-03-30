@@ -1,8 +1,1 @@
-from gym_pybullet_drones.envs.CtrlAviary import CtrlAviary
-from gym_pybullet_drones.envs.DynAviary import DynAviary
-from gym_pybullet_drones.envs.VelocityAviary import VelocityAviary
-from gym_pybullet_drones.envs.VisionAviary import VisionAviary
 from gym_pybullet_drones.envs.ControlAviary import ControlAviary
-#怎样检测碰撞
-#改变路径之后如何给PID反馈来影响状态的，或者直接通过运动影响状态
-#如何实现路径跟踪
