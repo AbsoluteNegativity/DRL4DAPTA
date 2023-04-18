@@ -363,7 +363,8 @@ class ControlAviary(BaseAviary):
                        (ADSB_info[self.typeA-1,2]-h)<ADSB_info[j,2]:
                        reward_c=0
                     else:
-                       reward_c=np.tanh((np.linalg.norm(P_max,ord=2)-r)/r) 
+                       dpmin=math.sqrt(d_h**2+d_v**2)
+                       reward_c=np.tanh((np.linalg.norm(dpmin,ord=2)-r)/r)
         nums = list(map(float, d_collisions))
         self.cloest_d_collision = nums[0]
  
